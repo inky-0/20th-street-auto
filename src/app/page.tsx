@@ -214,8 +214,18 @@ function Nav() {
    HERO
    ═══════════════════════════════════════════════════════════════════ */
 
+const HERO_SLIDES = ["/hero-bg.jpg", "/work-1.jpg", "/work-3.jpg", "/work-4.jpg"];
+
 function Hero() {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleMouseMove = useCallback((e: React.MouseEvent) => {
     const x = (e.clientX / window.innerWidth - 0.5) * 20;
@@ -228,19 +238,26 @@ function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       onMouseMove={handleMouseMove}
     >
-      {/* Background with parallax */}
-      <div
-        className="absolute inset-0 scale-110 transition-transform duration-700 ease-out"
-        style={{ transform: `translate(${mousePos.x}px, ${mousePos.y}px) scale(1.1)` }}
-      >
-        <Image
-          src="/hero-bg.jpg"
-          alt="20th Street Auto Service shop"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
+      {/* Slideshow background with parallax */}
+      {HERO_SLIDES.map((src, i) => (
+        <div
+          key={src}
+          className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+          style={{
+            opacity: i === currentSlide ? 1 : 0,
+            transform: `translate(${mousePos.x}px, ${mousePos.y}px) scale(1.1)`,
+            transition: "opacity 1s ease-in-out, transform 0.7s ease-out",
+          }}
+        >
+          <Image
+            src={src}
+            alt="20th Street Auto Service"
+            fill
+            className="object-cover"
+            priority={i === 0}
+          />
+        </div>
+      ))}
 
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#0a0a0a]" />
