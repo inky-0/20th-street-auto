@@ -1,0 +1,35 @@
+import type { Metadata } from "next";
+import { Inter, Bebas_Neue } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const bebas = Bebas_Neue({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+// Replace per client
+export const metadata: Metadata = {
+  title: "20th Street Auto Service — Trusted Auto Repair in Boca Raton, FL",
+  description: "Honest diagnostics, quality repairs, and fair pricing. Family-owned auto shop on N Dixie Hwy serving Boca Raton. Call (561) 465-5512.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${inter.variable} ${bebas.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-[var(--bg)] text-[var(--text)]">
+        {children}
+      </body>
+    </html>
+  );
+}

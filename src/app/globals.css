@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  /* ── BRAND PALETTE ────────────────────────────────────────────────────
+     The only thing you usually change per client. Override these
+     8 values and the entire site re-themes. */
+  --bg:           #0a0a0a;          /* page background */
+  --surface:      #111111;          /* alternating section bg */
+  --surface-2:    #181818;          /* card bg */
+  --border:       rgba(255, 255, 255, 0.08);
+  --text:         #ffffff;
+  --text-mute:    #999999;
+  --accent:       #f18b35;          /* primary brand color (CTAs, accents) */
+  --accent-light: #f9a85c;          /* lighter version (hover, accent-lite) */
+}
+
+@theme inline {
+  --color-bg:           var(--bg);
+  --color-surface:      var(--surface);
+  --color-surface-2:    var(--surface-2);
+  --color-text:         var(--text);
+  --color-text-mute:    var(--text-mute);
+  --color-accent:       var(--accent);
+  --color-accent-light: var(--accent-light);
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-display), "Bebas Neue", "Impact", sans-serif;
+}
+
+.brand-wordmark {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+}
+
+::selection {
+  background: var(--accent);
+  color: #000;
+}
+
+@media (max-width: 640px) {
+  section { padding-top: 56px !important; padding-bottom: 56px !important; padding-left: 18px !important; padding-right: 18px !important; }
+}
+@media (max-width: 390px) {
+  section { padding-top: 48px !important; padding-bottom: 48px !important; padding-left: 16px !important; padding-right: 16px !important; }
+}
