@@ -24,6 +24,10 @@ export const metadata: Metadata = {
     description: "Honest diagnostics, quality repairs, and fair pricing. Family-owned ASE-certified auto shop serving Boca Raton for 15+ years.",
     type: "website",
   },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
