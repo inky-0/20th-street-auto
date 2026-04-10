@@ -812,8 +812,7 @@ function ServiceAreaSection() {
 function CtaBanner() {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-[var(--accent)]" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#e07520] to-[#f5a04a] opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[var(--accent)] to-[var(--accent-light)]" />
 
       <div className="relative section-pad">
         <div className="max-w-3xl mx-auto text-center">
