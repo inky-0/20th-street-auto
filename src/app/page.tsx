@@ -149,8 +149,11 @@ function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="brand-wordmark text-2xl text-white tracking-wider">
-          20TH STREET <span className="text-[var(--accent)]">AUTO</span>
+        <a href="#" className="flex items-center gap-2">
+          <Image src="/logo.png" alt="20th Street Auto" width={40} height={40} className="w-10 h-10" />
+          <span className="brand-wordmark text-xl text-white tracking-wider hidden sm:inline">
+            20TH STREET <span className="text-[var(--accent)]">AUTO</span>
+          </span>
         </a>
 
         {/* Desktop links */}
@@ -934,9 +937,12 @@ function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <span className="brand-wordmark text-2xl text-white tracking-wider block mb-4">
-              20TH STREET <span className="text-[var(--accent)]">AUTO</span>
-            </span>
+            <div className="flex items-center gap-3 mb-4">
+              <Image src="/logo.png" alt="20th Street Auto" width={48} height={48} className="w-12 h-12" />
+              <span className="brand-wordmark text-xl text-white tracking-wider">
+                20TH STREET <span className="text-[var(--accent)]">AUTO</span>
+              </span>
+            </div>
             <p className="text-[var(--text-mute)] text-sm leading-relaxed">
               Honest diagnostics, quality repairs, and fair pricing. Family-owned auto shop serving Boca Raton for over 15 years.
             </p>
