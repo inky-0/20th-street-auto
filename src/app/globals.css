@@ -1,17 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  /* ── BRAND PALETTE ────────────────────────────────────────────────────
-     The only thing you usually change per client. Override these
-     8 values and the entire site re-themes. */
-  --bg:           #0a0a0a;          /* page background */
-  --surface:      #111111;          /* alternating section bg */
-  --surface-2:    #181818;          /* card bg */
+  --bg:           #0a0a0a;
+  --surface:      #111111;
+  --surface-2:    #151515;
   --border:       rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(241, 139, 53, 0.3);
   --text:         #ffffff;
   --text-mute:    #999999;
-  --accent:       #f18b35;          /* primary brand color (CTAs, accents) */
-  --accent-light: #f9a85c;          /* lighter version (hover, accent-lite) */
+  --accent:       #f18b35;
+  --accent-light: #f9a85c;
 }
 
 @theme inline {
@@ -26,10 +24,10 @@
   --font-display: var(--font-display), "Bebas Neue", "Impact", sans-serif;
 }
 
-.brand-wordmark {
-  font-family: var(--font-display);
-  letter-spacing: 0.04em;
-  font-weight: 400;
+/* ── GLOBAL RESETS ─────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -49,9 +47,79 @@ body {
   color: #000;
 }
 
-@media (max-width: 640px) {
-  section { padding-top: 56px !important; padding-bottom: 56px !important; padding-left: 18px !important; padding-right: 18px !important; }
+/* ── BRAND WORDMARK ────────────────────────────────────────────── */
+
+.brand-wordmark {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  font-weight: 400;
 }
-@media (max-width: 390px) {
-  section { padding-top: 48px !important; padding-bottom: 48px !important; padding-left: 16px !important; padding-right: 16px !important; }
+
+/* ── SCROLL PROGRESS BAR ───────────────────────────────────────── */
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  z-index: 9999;
+  transition: width 0.05s linear;
+  pointer-events: none;
+}
+
+/* ── CUSTOM SCROLLBAR ──────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ── SECTION SPACING ───────────────────────────────────────────── */
+
+.section-pad {
+  padding: 96px 24px;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding: 120px 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-pad {
+    padding: 64px 18px;
+  }
+}
+
+/* ── CARD HOVER ────────────────────────────────────────────────── */
+
+.card-hover {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  box-shadow: 0 8px 32px rgba(241, 139, 53, 0.08);
+}
+
+/* ── FAQ ACCORDION ─────────────────────────────────────────────── */
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+.faq-answer.open {
+  max-height: 500px;
 }

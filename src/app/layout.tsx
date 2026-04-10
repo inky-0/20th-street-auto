@@ -16,8 +16,14 @@ const bebas = Bebas_Neue({
 
 // Replace per client
 export const metadata: Metadata = {
-  title: "20th Street Auto Service — Trusted Auto Repair in Boca Raton, FL",
-  description: "Honest diagnostics, quality repairs, and fair pricing. Family-owned auto shop on N Dixie Hwy serving Boca Raton. Call (561) 465-5512.",
+  title: "20th Street Auto Service | Trusted Auto Repair in Boca Raton, FL",
+  description: "Honest diagnostics, quality repairs, and fair pricing. Family-owned ASE-certified auto shop on N Dixie Hwy serving Boca Raton for 15+ years. Call (561) 465-5512.",
+  keywords: ["auto repair boca raton", "mechanic boca raton", "brake service", "oil change", "20th street auto", "car repair near me"],
+  openGraph: {
+    title: "20th Street Auto Service | Trusted Auto Repair in Boca Raton, FL",
+    description: "Honest diagnostics, quality repairs, and fair pricing. Family-owned ASE-certified auto shop serving Boca Raton for 15+ years.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
