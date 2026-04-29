@@ -1,15 +1,27 @@
-# 20th Street Auto Service
+# 20th Street Auto Service Inc
 
-> Honest diagnostics, quality repairs, and fair pricing. Family-owned ASE-certified auto shop on N Dixie Hwy serving Boca Raton for 15+ years. Call (561) 465-5512.
+> Full-service auto repair in Boca Raton, FL. Honest, affordable car maintenance and repair for all makes and models.
 
 ## Contact
 - Phone: (561) 465-5512
 - Email: service@20thstreetautoservice.com
-- Address: 
+- Address: 1990 N Dixie Hwy, Boca Raton, FL 33432
 - Website: https://20th-street-auto-production.up.railway.app/
 
-## Services
+## Hours
+Mo-Fr 08:00-17:00, Sa 08:00-14:00
 
+## Services
+  - General Repair
+  - Oil Changes
+  - Brake Service
+  - Engine Diagnostics
+  - A/C Repair
+  - Tire Service
+
+## Service Area
+- Primary: Boca Raton, FL
+- Also serving: greater Boca Raton metropolitan area
 
 ## Pages
 - [Homepage](https://20th-street-auto-production.up.railway.app/)

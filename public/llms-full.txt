@@ -1,10 +1,10 @@
-# 20th Street Auto Service — Complete Business Information
+# 20th Street Auto Service Inc — Complete Business Information
 
-> Honest diagnostics, quality repairs, and fair pricing. Family-owned ASE-certified auto shop on N Dixie Hwy serving Boca Raton for 15+ years. Call (561) 465-5512.
+> Full-service auto repair in Boca Raton, FL. Honest, affordable car maintenance and repair for all makes and models.
 
-## About 20th Street Auto Service
+## About 20th Street Auto Service Inc
 
-20th Street Auto Service is a trusted Localbusiness serving customers across the United States. With a focus on quality, reliability, and customer satisfaction, 20th Street Auto Service has built a reputation for delivering professional results at fair prices.
+20th Street Auto Service Inc is a trusted AutoRepair serving customers in Boca Raton, FL and surrounding areas. With a focus on quality, reliability, and customer satisfaction, 20th Street Auto Service Inc has built a reputation for delivering professional results at fair prices.
 
 ## Contact Information
 
@@ -12,17 +12,33 @@
 |---|---|
 | Phone | (561) 465-5512 |
 | Email | service@20thstreetautoservice.com |
-| Address |  |
-| Hours |  |
+| Address | 1990 N Dixie Hwy, Boca Raton, FL 33432 |
+| Hours | Mo-Fr 08:00-17:00, Sa 08:00-14:00 |
 | Website | https://20th-street-auto-production.up.railway.app/ |
 
 ## Services Offered
 
+### General Repair
+20th Street Auto Service Inc offers professional general repair services in Boca Raton, FL.
 
+### Oil Changes
+20th Street Auto Service Inc offers professional oil changes services in Boca Raton, FL.
+
+### Brake Service
+20th Street Auto Service Inc offers professional brake service services in Boca Raton, FL.
+
+### Engine Diagnostics
+20th Street Auto Service Inc offers professional engine diagnostics services in Boca Raton, FL.
+
+### A/C Repair
+20th Street Auto Service Inc offers professional a/c repair services in Boca Raton, FL.
+
+### Tire Service
+20th Street Auto Service Inc offers professional tire service services in Boca Raton, FL.
 
 ## Service Area
 
-20th Street Auto Service serves customers across the United States.
+20th Street Auto Service Inc serves Boca Raton, FL and surrounding communities.
 
 ---
 *For the most up-to-date information, visit [our website](https://20th-street-auto-production.up.railway.app/).*
